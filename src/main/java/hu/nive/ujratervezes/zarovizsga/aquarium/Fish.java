@@ -29,12 +29,16 @@ public abstract class Fish {
         return hasMemoryLoss;
     }
 
+    public void setHasMemoryLoss(boolean hasMemoryLoss) {
+        this.hasMemoryLoss = hasMemoryLoss;
+    }
+
     public void setWeight(int weight) {
         this.weight = weight;
     }
 
     public String status() {
-        return name + ", weight: " + weight + ", color: " + color + ", short-term memory loss: " + hasMemoryLoss;
+        return name + ", weight: " + weight + ", color: " + color + ", short term memory loss: " + hasMemoryLoss;
     }
 
     abstract void feed();
